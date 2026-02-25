@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insurance Fraud Detection</title>
+</head>
+<body>
+    <h2>Insurance Fraud Detection System</h2>
+
+    <form action="/predict" method="post">
+        Age: <input type="number" name="age"><br><br>
+        Claim Amount: <input type="number" name="amount"><br><br>
+        <button type="submit">Check Fraud</button>
+    </form>
+
+    <h3>{{ prediction }}</h3>
+</body>
+</html>
